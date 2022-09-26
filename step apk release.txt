@@ -1,0 +1,13 @@
+membuat key store : 
+    keytool -genkey -v -keystore D:/Green_HCM/keystore/wrkpln.jks -storetype JKS -keyalg RSA -keysize 2048 -validity 10000 -alias wrkpln
+enter keystore password : greenhcm2022
+re-enter new password : greenhcm2022
+first and last name : PT. Teknologi Bangsa Mendunia
+organizational unit : WRKPLN 
+organization : WRKPLN
+City : JAKARTA SELATAN
+Province : JAKARTA
+country code : +62
+
+Warning:
+The JKS keystore uses a proprietary format. It is recommended to migrate to PKCS12 which is an industry standard format using "keytool -importkeystore -srckeystore D:/Green_HCM/keystore/wrkpln.jks -destkeystore D:/Green_HCM/keystore/wrkpln.jks -deststoretype pkcs12".

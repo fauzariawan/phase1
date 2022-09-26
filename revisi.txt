@@ -1,0 +1,57 @@
+flutter build appbundle --no-sound-null-safety => untuk ke playstore 
+flutter build apk --release --no-sound-null-safety =< untuk build apk release
+
+1. version 1.0.0+4 mengganti base url ke production
+2. version: 1.0.1+5
+    1. gambar tidak tampil di view dokument (clear)
+    2. ubah nama app di handphon menjadi WrkPln (clear)
+    3. hilangkan notif "Fitur Biometrics tidak tersedia pada device anda" (clear)
+    4. mau tes ubah foto profile tapi fotonya tidak muncul
+3. version: 1.0.2+6
+    1. handle resert password agar tidak bisa di click berkali2 (16/02/2022)
+4. version: 1.0.2+9 (sudah di deploy ke playstore)
+    1. jenis aktivitas tidak bisa di edit ketika terima inbox taks
+5. version: 1.0.2+10 (belum di deploy ke playstore)
+    1. perbaikan edit data ketika receice task di inbox tast (workplan_receive.dart)
+6. version: 1.0.3+10 (sudah di share)
+    1. hapus seluruh sessionTimer
+7. version: 1.0.4+10 (sudah di share)
+    1. perbaikan agar tidak terlogout ketika keluar aplikasi tanpa logout manual
+8. version: 1.0.5+12
+    1. perbaikan notification jika batas waktu 999 tidak ditampilkan notification
+9. version: 1.0.6+12
+    1. perbaikan looping company code, memberikan flag/tanda apabila company code sudah ditemukan maka tidak perlu di cari lagi     
+       daftar biometrik multi company
+10. version: 1.0.7+14
+    1. memberikan pengecekan gps aktiv atau tidak ketika checkin atau check out
+       file: visit_process.dart dan visit_checkout.dart
+11. version: 1.0.8+14
+    1. perbaikan map di checkin tidak tampil
+12. version: 1.0.9+14
+    1. membuat fungsi kamera menjadi bisa switch (bisa menggunakan camera depan Belakang)
+        file : visit_checkin_take_picture.dart
+13. version: 1.0.10+14
+    1. membuat fungsi untuk mengetahui app yang di build uat, beta, atau prod
+        file: loginscreen.dart
+    2. menambah field keterangan di menu checkin
+        file: visit_checkin.dart
+13. version: 1.0.11+14
+    1. memperbaiki fungsi pengambilan gambar
+        file: workplan_data_dokumen_detail.dart
+    2. memperbaiki posisi icon pencil di
+        file: workplan_visit_list.dart
+14. version: 1.0.12+14
+    kamera di kemballikan ke bentuk awal
+    tombol upload dokumen ketika di click menjadi disable
+    penambahan logic pengecekan Mock Location (lokasi tiruan)
+15. version: 1.0.17+17
+    memperbaiki mock location 
+    memberi notif tombol tambah rencana kunjungan ketika tidak ada internet
+16. version: 1.0.18+17
+    memperbaiki mock location (mengikuti logic di phase 2)
+17. version: 1.0.21+20
+    memperbaiki fungsi login yang apabila memasukkan username dengan benar tapi password salah 
+    dapat message "password salah", tapi ketika kita exit app, kemudian app nya kita buka kembali
+    maka akan langsung masuk ke username yang tadi kita masukkan  
+    
+    
